@@ -37,6 +37,7 @@ namespace BikeAPI.Controllers
         }
 
 
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         [Route("GetBike")]
         [HttpGet]
         public async Task<BikesApplicationModel.Bike> GetBike(int id)
@@ -59,6 +60,7 @@ namespace BikeAPI.Controllers
         }
 
 
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         [Route("CreateBike")]
         [HttpPost]
         public async Task<BikesApplicationModel.GeneralResult> Create(BikesApplicationModel.Bike bike)
@@ -188,6 +190,7 @@ namespace BikeAPI.Controllers
             return ruta;
 
         }
+
 
     }
 }
