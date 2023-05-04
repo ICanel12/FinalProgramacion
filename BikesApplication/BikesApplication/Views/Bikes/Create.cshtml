@@ -1,0 +1,70 @@
+﻿@model BikesApplicationModel.Bike
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Create</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create" >
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label">Nombre</label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Imagen" class="control-label"></label>
+                <input asp-for="Imagen" type="file" class="form-control-file" />
+                <span asp-validation-for="Imagen" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Type" class="control-label">Tipo</label>
+                <select asp-for="Type" class="form-control">
+                    <option value="doméstica">Doméstica</option>
+                    <option value="montaña">Montaña</option>
+                    <option value="carreras">Carreras</option>
+                    <option value="turismo">Turismo</option>
+                    <option value="plegable">Plegable</option>
+                    <option value="eléctrica">Eléctrica</option>
+                </select>
+                <span asp-validation-for="Type" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Brand" class="control-label">Marcar</label>
+                <input asp-for="Brand" class="form-control" />
+                <span asp-validation-for="Brand" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Size" class="control-label">Tamaño</label>
+                <input asp-for="Size" class="form-control" type="number"/>
+                <span asp-validation-for="Size" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NumberDishes" class="control-label">Número de platos</label>
+                <input asp-for="NumberDishes" class="form-control" />
+                <span asp-validation-for="NumberDishes" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NumberSprockets" class="control-label">Número de piñones</label>
+                <input asp-for="NumberSprockets" class="form-control" />
+                <span asp-validation-for="NumberSprockets" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

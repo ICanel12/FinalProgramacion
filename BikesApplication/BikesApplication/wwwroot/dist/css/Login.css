@@ -1,0 +1,43 @@
+body {
+    background-image: url("~/dist/img/Login.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+.card{
+    width: 600px;
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    color: white;
+}
+
+
+.card-body, .card-header{
+    padding: 15px 50px 15px 50px !important;
+}
+
+input[type="text"], input[type="password"] {    
+    width: 100%;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid white;
+    outline: none;
+    color: white;
+    font-size: 16px;
+    background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+
+input[type="text"]:hover, input[type="password"]:hover {    
+    color: white !important;
+}
+
+.sign-up{
+    margin-left: 5px;
+}
+
+.logo{
+    width: 20%;
+    border-radius: 50px;
+}
