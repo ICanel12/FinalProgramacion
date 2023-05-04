@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "Jf22hGA9kKI/pV50C1eWk1q6uwdfwOGpiikPhXo+3jwdJqXEzEpwm7kwhZ2U2b7uV+jOj7HXr2W5tyKE2Vq1jg==",
+  "success": true,
+  "projectFilePath": "D:\\URL\\QUINTO AÑO\\Primer Ciclo\\Programación Web\\FINAL\\BikesApplication\\BikesApplicationModel\\BikesApplicationModel.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ivanc\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.17\\microsoft.aspnetcore.http.features.5.0.17.nupkg.sha512",
+    "C:\\Users\\ivanc\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.1\\microsoft.extensions.primitives.5.0.1.nupkg.sha512",
+    "C:\\Users\\ivanc\\.nuget\\packages\\system.io.pipelines\\5.0.2\\system.io.pipelines.5.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

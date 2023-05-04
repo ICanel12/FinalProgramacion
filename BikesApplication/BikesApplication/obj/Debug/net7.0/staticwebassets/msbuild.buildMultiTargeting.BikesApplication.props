@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\BikesApplication.props" />
+</Project>
